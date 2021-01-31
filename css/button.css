@@ -1,0 +1,72 @@
+/* button */
+.button {
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  /* width: 350px;
+  height: 85px; */
+
+  font-family: "Rozha One", serif;
+  font-weight: 400;
+
+  border: 1px solid #e9b370;
+
+  text-decoration: none;
+  color: #e9b370;
+
+  transition: background-color 0.2s linear, color 0.2s linear;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.button__back {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: #e9b370;
+}
+
+.button__text {
+  z-index: 10;
+  position: relative;
+}
+
+.button__back__in {
+  transform: scale(50);
+  transition: transform 0.25s linear;
+}
+
+.button__back__out {
+  transform: scale(0);
+  transition: transform 0.25s linear;
+}
+
+.button>.button__text {
+  color: #e9b370;
+  transition: color 0.25s linear;
+}
+
+.button:hover>.button__text {
+  color: #fff;
+}
+
+.button__inverse {
+  border: 1px solid #e9b370;
+  background-color: #e9b370;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.button__inverse:hover {
+  background-color: #fff;
+  color: #e9b370;
+
+  text-transform: uppercase;
+}

@@ -1,0 +1,123 @@
+/* section */
+.section  {
+  padding-top: 200px;
+  background-color: white;
+  overflow: hidden;
+}
+@media (max-width: 769px) {
+  .section  {
+    padding-top: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .section  {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 321px) {
+  .section  {
+    padding-top: 70px;
+  }
+}
+
+.section__inner {
+  text-align: center;
+}
+
+.section__header {
+  margin-bottom: 60px;
+}
+
+.section__supttitle::after,
+.section__supttitle::before {
+  content: "";
+  display: inline-block;
+  width: 450px;
+  height: 1px;
+  border-bottom: 1px solid #e9e9e9;
+  position: relative;
+  bottom: 4px;
+}
+.section__supttitle::after {
+  left: 10px;
+}
+.section__supttitle::before {
+  right: 10px;
+}
+@media (max-width: 769px) {
+  .section__supttitle::after,
+  .section__supttitle::before {
+    width: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .section__supttitle::after,
+  .section__supttitle::before {
+    width: 120px;
+  }
+}
+@media (max-width: 321px) {
+  .section__supttitle::after,
+  .section__supttitle::before {
+    width: 100px;
+  }
+}
+
+.section__supttitle {
+  font-family: "PantReg", Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+@media (max-width: 480px) {
+  .section__supttitle {
+    font-size: 20px;
+  }
+}
+
+.section__tittle {
+  color: #444;
+  font-size: 60px;
+  font-family: "Rozha One", serif;
+  font-weight: 400;
+}
+@media (max-width: 480px) {
+  .section__tittle {
+    font-size: 40px;
+  }
+}
+@media (max-width: 321px) {
+  .section__tittle {
+    font-size: 35px;
+  }
+}
+
+.section__text {
+  margin: 0 auto;
+  max-width: 660px;
+  font-size: 20px;
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+@media (max-width: 769px) {
+  .section__text {
+    max-width: 500px;
+  }
+}
+@media (max-width: 481px) {
+  .section__text {
+    margin-top: 10px;
+    max-width: 350px;
+  }
+}
+@media (max-width: 321px) {
+  .section__text {
+    margin-top: 10px;
+    max-width: 300px;
+    font-size: 18px;
+  }
+}
+
+.section__body {
+
+}
