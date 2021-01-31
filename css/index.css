@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Rozha One";
+  src: url(fonts/RozhaOne.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rozha One", serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: gray;
+}
+
+.point {
+  color: #e9b370;
+}
+
+/* container */
+.container {
+  max-width: 1140px;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+
+/* intro */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  background-color: #181818;
+  overflow: hidden;
+}
+@media (max-width: 767px) {
+  .intro {
+    height: 450px;
+  }
+}
+
+.intro__inner {
+  max-width: 700px;
+  text-align: center;
+}
+
+.intro__suptittle {
+  width: 200px;
+  height: 48px;
+}
+@media (max-width: 480px) {
+  .intro__suptittle {
+    width: 133px;
+    height: 32px;
+  }
+}
+
+.intro__tittle {
+  color: white;
+  font-size: 70px;
+  text-align: center;
+  line-height: 0.8;
+}
+@media (max-width: 767px) {
+  .intro__tittle {
+    font-size: 50px;
+  }
+}
+@media (max-width: 480px) {
+  .intro__tittle {
+    font-size: 40px;
+  }
+}
+
+.intro__inner::before,
+.intro__inner::after {
+  content: "";
+  margin: 0 auto;
+  display: block;
+  width: 250px;
+  height: 1px;
+  background-color: white;
+  position: relative;
+  transform: rotate(140deg);
+}
+
+.intro__inner:before {
+  bottom: 110px;
+  left: 130px;
+}
+
+.intro__inner:after {
+  top: 110px;
+  right: 130px;
+}
