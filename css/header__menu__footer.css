@@ -259,16 +259,19 @@
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -10;
 
   padding-top: 50px;
 
   background-color: rgba(0, 0, 0, 0);
-
   opacity: 0;
 
   transition: opacity 0.3s linear;
-
-  z-index: -10;
+}
+@media (max-width: 499px) {
+  .menu {
+    padding-top: 0;
+  }
 }
 .menu__active {
   opacity: 1;
@@ -279,15 +282,21 @@
 .menu__button {
   color: #fff;
   text-decoration: none;
-
   font-size: 50px;
   font-family: "Rozha One";
 
   transition: color 0.2s linear;
 }
-
 .menu__list li:last-child a {
   font-size: 20px;
+}
+@media (max-width: 499px) {
+  .menu__button {
+    font-size: 30px;
+  }
+  .menu__list li:last-child a {
+    font-size: 15px;
+  }
 }
 
 .menu__button__unhover {
@@ -295,7 +304,6 @@
 
   transition: color 0.2s linear;
 }
-
 .menu__button__hover {
   color: #e9b370;
 
@@ -306,20 +314,24 @@
   content: '';
   display: block;
   margin: 20px auto;
-
-  height: 1px;
   width: 200px;
+  height: 1px;
 
   background-color: #fff;
+}
+@media (max-width: 499px) {
+  .menu__list li:last-child::before {
+    content: '';
+    display: none;
+  }
 }
 
 .menu__nav::after {
   content: '';
   display: block;
   margin-top: 200px;
-
-  height: 1px;
   width: 100%;
+  height: 1px;
 
   background-color: #fff;
 }
@@ -331,27 +343,72 @@
     margin-bottom: 14px;
   }
 }
+@media (max-width: 499px) {
+  .menu__nav::after {
+    content: '';
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 14px;
+  }
+}
 
 .menu__footer {
   color: #fff;
-}
-
-.menu__footer>* {
-  margin: 7px 0;
-
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 767px) {
-  .menu__footer>* {
+.menu__footer * {
+  font-family: "PantReg", Helvetica, sans-serif;
+}
+@media (max-width: 899px) {
+  .menu__footer {
     flex-direction: column;
+    align-items: center;
   }
+}
+
+.menu__footer__left,
+.menu__footer__right {
+  width: 50%;
+}
+@media (max-width: 899px) {
+  .menu__footer__left,
+  .menu__footer__right {
+    width: 100%;
+  }
+}
+
+.menu__footer__left > *,
+.menu__footer__right > * {
+  display: block;
+  margin: 10px 0;
+}
+.menu__footer__left > * {
+  text-align: left;
+}
+.menu__footer__right > * {
+  text-align: right;
+}
+@media (max-width: 899px) {
+  .menu__footer__left > *,
+  .menu__footer__right > * {
+    text-align: center;
+  }
+}
+
+.menu__footer__left span:first-child {
+  text-transform: uppercase;
+  color: #e9b370;
 }
 
 .menu__networks__tittle {
   color: #e9b370;
   text-transform: uppercase;
   font-family: "PantReg", Helvetica, sans-serif;
+}
+
+.menu__networks__icons > a {
+  display: inline-block;
 }
 
 .menu__icon {
@@ -523,6 +580,9 @@
 
 .networks {
   width: 25%;
+}
+.networks > * {
+  display: inline-block;
 }
 @media (max-width: 767px) {
   .networks {

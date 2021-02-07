@@ -1,24 +1,24 @@
 /* fading in */
-// const body = document.querySelector('body');
-// body.onload = function () {
-//   body.classList.remove('fading__null')
-//   body.classList.add('fading__unit')
-//   body.ontransitionend = function() {
-//     body.classList.remove('fading__unit')
-//   }
-// }
+const body = document.querySelector('body');
+body.onload = function () {
+  body.classList.remove('fading__null')
+  body.classList.add('fading__unit')
+  body.ontransitionend = function() {
+    body.classList.remove('fading__unit')
+  }
+}
 
 /* fading out */
-// const links = document.querySelectorAll('a')
-// links.forEach(link => {
-//   link.onclick = function() {
-//     event.preventDefault()
-//     body.classList.add('fading__null')
-//     body.ontransitionend = function() {
-//       window.location = link.href
-//     }
-//   }
-// })
+const links = document.querySelectorAll('a')
+links.forEach(link => {
+  link.onclick = function() {
+    event.preventDefault()
+    body.classList.add('fading__null')
+    body.ontransitionend = function() {
+      window.location = link.href
+    }
+  }
+})
 
 
 /* button anim */
