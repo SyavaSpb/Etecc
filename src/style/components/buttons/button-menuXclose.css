@@ -1,0 +1,138 @@
+.button-menuXclose__border {
+  box-sizing: border-box;
+  border: 1px solid rgb(233, 179, 112);
+  border-radius: 50%;
+  background-color: rgba(233, 179, 112, 0.5);
+
+  transform: scale(0.9);
+
+  transition: transform 0.25s linear;
+}
+.button-menuXclose__border-active {
+  transform: scale(1.2);
+}
+
+.button-menuXclose__text {
+  position: absolute;
+  top: calc((100% - 16px) / 2);
+  left: 0;
+  opacity: 0;
+
+  transition: left 0.25s linear, opacity 0.25s linear;
+}
+.button-menuXclose__text-active {
+  left: -110%;
+  opacity: 1;
+}
+@media (max-width: 900px) {
+  .button-menuXclose__text-active {
+    left: -140%;
+  }
+}
+
+.button-menuXclose__back {
+  border-radius: 50%;
+  background-color: #120e0f;
+  transform: scale(1);
+  transition: transform 0.6s linear;
+  z-index: 99;
+
+  pointer-events: none;
+}
+.button-menuXclose__back-active {
+  transform: scale(110);
+  transition: transform 0.6s linear;
+  z-index: 99;
+}
+
+.button-menuXclose__dash {
+  width: 48%;
+  height: 1px;
+  position: absolute;
+  left: 26%;
+
+  pointer-events: none;
+
+  background-color: #fff;
+}
+.button-menuXclose__dash-top {
+  top: 37%
+}
+.button-menuXclose__dash-middle {
+  top: 50%;
+}
+.button-menuXclose__dash-bottom {
+  top: 63%
+}
+
+@keyframes anim-dash-top {
+  0% {
+    top: 37%;
+    transform: rotate(0deg);
+  }
+  40% {
+    top: 37%;
+    transform: rotate(-15deg);
+  }
+  60% {
+    top: 37%;
+    transform: rotate(-15deg);
+  }
+  80% {
+    top: 50%;
+    transform: rotate(150deg);
+  }
+  100% {
+    top: 50%;
+    transform: rotate(135deg);
+  }
+}
+.button-menuXclose__dash-top-close {
+  top: 50%;
+  transform: rotate(135deg);
+}
+
+@keyframes anim-dash-middle {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.button-menuXclose__dash-middle-close {
+  opacity: 0;
+}
+
+@keyframes anim-dash-bottom {
+  0% {
+    top: 63%;
+    transform: rotate(0deg);
+  }
+  40% {
+    top: 63%;
+    transform: rotate(15deg);
+  }
+  60% {
+    top: 63%;
+    transform: rotate(15deg);
+  }
+  80% {
+    top: 50%;
+    transform: rotate(-150deg);
+  }
+  100% {
+    top: 50%;
+    transform: rotate(-135deg);
+  }
+}
+.button-menuXclose__dash-bottom-close {
+  top: 50%;
+  transform: rotate(-135deg);
+}

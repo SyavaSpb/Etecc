@@ -1,0 +1,18 @@
+@import url('./fonts.css');
+
+@import url('./all.css');
+
+@import url('./blocks/section.css');
+
+@import url('./blocks/header.css');
+@import url('./blocks/menu.css');
+@import url('./blocks/intro.css');
+@import url('./blocks/hello.css');
+@import url('./blocks/latest.css');
+@import url('./blocks/technology.css');
+@import url('./blocks/expertise.css');
+@import url('./blocks/footer.css');
+
+@import url('./components/tittle/tittle.css');
+@import url('./components/text/text.css');
+@import url('./components/buttons/buttons.css');

@@ -1,0 +1,18 @@
+.text-m { font-size: 2.2rem; }
+.text-xs { font-size: 1.7rem; }
+.text-s { font-size: 1.4rem; }
+
+.text-george { font-family: Georgia, serif; }
+.text-rozha { font-family: "Rozha one"; }
+.text-pant { font-family: "PantReg", Helvetica; }
+
+.text-up { text-transform: uppercase; }
+.text-bold { font-weight: bold; }
+.text-light { font-weight: lighter; }
+.text-clean { text-decoration: none; }
+
+.text-orange { color: #e9b370; }
+.text-orange::selection { background-color: #184991; }
+.text-white { color: #ffffff; }
+.text-gray { color: #444444; }
+.text-black { color: #000000; }

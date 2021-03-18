@@ -1,0 +1,42 @@
+@import url("button-pulse.css");
+@import url("button-menuXclose.css");
+
+.button-standart {
+  display: block;
+  position: relative;
+
+  border: 1px solid #e9b370;
+}
+
+.button__text {
+  position: relative;
+  z-index: 10;
+
+  transition: color 0.25s linear;
+}
+
+.button-standart:hover .button__text {
+  color: #ffffff;
+}
+
+.button__back {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 25px;
+  background-color: #e9b370;
+}
+
+.button__back__in {
+  transform: scale(70);
+  transition: transform 0.25s linear;
+}
+
+.button__back__out {
+  transform: scale(0);
+  transition: transform 0.25s linear;
+}

@@ -1,0 +1,31 @@
+.technology {
+  padding: 200px 0;
+}
+@media (max-width: 900px) {
+  .technology {
+    padding: 70px 0;
+  }
+}
+
+.technology__inner {
+  display: flex;
+  justify-content:space-between;
+}
+@media (max-width: 900px) {
+  .technology__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.technology__item {
+  width: 30%;
+  height: auto;
+  fill: gray
+}
+@media (max-width: 900px) {
+  .technology__item {
+    width: 60%;
+    margin: 20px 0;
+  }
+}

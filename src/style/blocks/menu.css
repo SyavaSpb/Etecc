@@ -1,0 +1,149 @@
+.menu {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+
+  padding-top: 50px;
+
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+
+  transition: opacity 0.3s linear;
+}
+@media (max-width: 499px) {
+  .menu {
+    padding-top: 0;
+  }
+}
+.menu-active {
+  opacity: 1;
+
+  z-index: 1000;
+}
+
+.menu__nav {
+  text-align: center;
+}
+
+.menu__list > * {
+  list-style: none;
+}
+
+.menu__button {
+  color: #fff;
+
+  transition: color 0.2s linear;
+}
+
+.menu__button-unhover {
+  color: grey;
+}
+.menu__button-hover {
+  color: #e9b370;
+}
+
+.menu__list li:last-child::before {
+  content: '';
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+  height: 1px;
+
+  background-color: #fff;
+}
+@media (max-width: 499px) {
+  .menu__list li:last-child::before {
+    content: '';
+    display: none;
+  }
+}
+
+.menu__nav::after {
+  content: '';
+  display: block;
+  margin-top: 200px;
+  width: 100%;
+  height: 1px;
+
+  background-color: #fff;
+}
+@media (max-width: 767px) {
+  .menu__nav::after {
+    content: '';
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 14px;
+  }
+}
+@media (max-width: 499px) {
+  .menu__nav::after {
+    content: '';
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 14px;
+  }
+}
+
+.menu__footer {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 899px) {
+  .menu__footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.menu__footer-left,
+.menu__footer-right {
+  width: 50%;
+}
+@media (max-width: 899px) {
+  .menu__footer-left,
+  .menu__footer-right {
+    width: 100%;
+  }
+}
+
+.menu__footer-left > *,
+.menu__footer-right > * {
+  display: block;
+  margin: 10px 0;
+}
+.menu__footer-left > * {
+  text-align: left;
+}
+.menu__footer-right > * {
+  text-align: right;
+}
+@media (max-width: 899px) {
+  .menu__footer-left > *,
+  .menu__footer-right > * {
+    text-align: center;
+  }
+}
+
+/* .menu__footer-left span:first-child {
+  text-transform: uppercase;
+  color: #e9b370;
+} */
+
+/* .menu__networks-tittle {
+  color: #e9b370;
+  text-transform: uppercase;
+  font-family: "PantReg", Helvetica, sans-serif;
+} */
+
+.menu__networksIcons > * {
+  display: inline-block;
+}
+
+.menu__icon {
+  width: 20px;
+  height: 20px;
+  fill: #e9b370;
+}

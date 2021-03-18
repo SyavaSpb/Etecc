@@ -1,0 +1,12 @@
+.tittle {
+  text-align: center;
+}
+
+
+.tittle-l {
+  font-size: 6rem;
+  line-height: 0.8em;
+}
+.tittle-xxm { font-size: 4.7rem; }
+.tittle-xm { font-size: 3.3rem; }
+.tittle-m { font-size: 2.7rem; }
