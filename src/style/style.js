@@ -9,11 +9,16 @@
 @@include('./blocks/latest.js')
 
 window.onload = function() {
-  console.log("load")
   fadingLoad()
+  headerResize()
+}
+
+window.onresize = function() {
+  headerResize()
 }
 
 window.onscroll = function() {
   latestScrolling()
   introScrolling()
+  headerScroll()
 }
