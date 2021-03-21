@@ -1,6 +1,10 @@
 # Etecc
 http://saveliyportfolio.ru/etecc/index.html  
-html, css, js, gulp
+### Технологии
+ + html
+ + css
+ + js
+ + gulp
 ### Особенности:
  + Адаптивность
  + Модальное окно
